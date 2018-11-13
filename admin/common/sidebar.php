@@ -12,6 +12,7 @@
             <a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-laptop"></i><span class="app-menu__label">users</span><i class="treeview-indicator fa fa-angle-right"></i></a>
             <ul class="treeview-menu">
                 <li><a class="treeview-item" href="index.php"><i class="icon fa fa-circle-o"></i> Add new user </a></li>
+                <li><a class="treeview-item" href="user_list.php"><i class="icon fa fa-circle-o"></i> user List </a></li>
             </ul>
         </li>
     </ul>

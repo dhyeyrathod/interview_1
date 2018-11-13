@@ -2,11 +2,16 @@
 
 class Form_validation extends Connection
 {
-	public function execute($data)
+	public function execute($data , $image)
 	{
 		$flag = true ;
 		if ($data['firstname'] == '') {
 			$message['firstname'] = "<p>firstname is required</p>";
+			$flag = false ; 
+		}
+
+		if ($image == '') {
+			$message['image'] = "<p>Image is Not present</p>";
 			$flag = false ; 
 		}
 
@@ -31,7 +36,7 @@ class Form_validation extends Connection
 		if ($data['cpassword'] == '') {
 			$message['cpassword'] = "<p>confirm Password is required</p>";
 			$flag = false ; 
-		} elseif ($data['cpassword'] != $message['password']){
+		} elseif ($data['cpassword'] != $data['password']){
 			$message['cpassword'] = "<p>confirm Password is required</p>";
 			$flag = false ; 
 		}
